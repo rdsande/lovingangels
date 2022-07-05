@@ -1,0 +1,1 @@
+/* This script activates and deactivates profile tabs */
