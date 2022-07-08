@@ -239,6 +239,11 @@ h1, h2, h3, h4, h5.h6 {
 	color: var(--primary);
 }
 
+.nav-item:hover {
+	color: var(--secondary);
+	transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+}
+
 .curve-element:before {
 	top: 0;
 	right: 0;
@@ -315,6 +320,11 @@ h1, h2, h3, h4, h5.h6 {
 	/* overflow: hidden; */
 	display: flex;
 	align-items: center;
+	flex-flow: column;
+}
+
+.spacer {
+	padding: 80px;
 }
 
 .dots-container {
@@ -815,11 +825,12 @@ h1, h2, h3, h4, h5.h6 {
 	display: flex;
 	flex-flow: column;
 	width: 100%;
-	background: rgba(0, 0, 0, .03);
+	background: transparent;
 	padding: 10px;
 	border-radius: 0.5rem;
 	margin: 10px 0;
 	overflow: hidden;
+	border: 1px solid rgba(0, 0, 0, .04);
 }
 
 .detail p {
